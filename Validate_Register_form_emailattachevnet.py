@@ -44,16 +44,12 @@ def content_log(cliente, new, update, date_i, date_f):
 def create_connection_visor_database():
     # Connection MongoDB
     mongo_conn_prod = {
-        "conn_str": "mongodb://cadena_apps:"
-                    + urllib.parse.quote("V#uDC@18")
-                    + "@10.70.0.158:27017/",
+        "conn_str": 
         "db_name": "",
     }
 
     mongo_conn_qa = {
-        "conn_str": "mongodb://cadena_apps:"
-                    + urllib.parse.quote("V#uDC@18")
-                    + "@10.70.0.59:27017/",
+        "conn_str": 
         "db_name": "",
     }
 
@@ -135,10 +131,10 @@ def create_slmailid_list(filename):
 
 def create_conncetion(db):
     return pymssql.connect(
-        host='10.70.0.191',
+        host='',
         database=db,
-        user='consultamsp',
-        password='consultamsp*')
+        user='',
+        password='')
 
 
 def execute_search_email_event(list_ciclos):
